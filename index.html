@@ -4,19 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6F4F47JRL">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6F4F47JRL">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-T6F4F47JRL');
-</script>
+    gtag('config', 'G-T6F4F47JRL');
+  </script>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-58cb8702-1f5f-4114-b79f-d14e370be364"></div>
   <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
 
 
@@ -47,89 +48,129 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
-    <div class="container d-flex align-items-center justify-content-between">
+  <header id="header" class="fixed-top header-transparent header-scrolled">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Fire alarm</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Fire alarm<span>.</span></h1>
+      </a>
+      <div class="header-social-links d-flex">
+        <a href="https://twitter.com/alsalama_tag" class="twitter"><i class="bu bi-twitter tw"></i></a>
+        <a href="https://www.facebook.com/mohammed.nabil.3363" class="facebook"><i class="fe bu bi-facebook"></i></a>
+        <a href="https://www.instagram.com/tag_al_salama_est/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" class="instagram"><i class="ine bu bi-instagram"></i></a>
+        <!-- <a href="" class="linkedin"><i class="bu bi-linkedin"></i></a> -->
+      </div>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a href="#home" class="active">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#portfolio">الانظمة</a></li>
+          <li><a href="#contact">اتصل بنا</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
+      
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center justify-content-center">
+  <section id="home" class="hero">
 
-    <video autoplay muted loop id="myVideo">
-      <source src="./assets/img/team/VID-20230801-WA0058.mp4" type="video/mp4">
-    </video>
-
-    <div class="container position-relative">
-      <h1>Welcome to Fire alarm system
-      </h1>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down" style="color: var(--color-primary);">تاج السلامة <span> لخدمات الدفاع المدني
+              </span></h2>
+            <h3 style="color: aliceblue;">متخصصون في مجال توريد وتركيب جميع الانظمة الامنية نحن معك للمحافظه علي
+              الممتلكات و الارواح</p>
+              <a data-aos="fade-up" data-aos-delay="200" href="#about" class="btn-get-started">من نحن</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </section><!-- End Hero -->
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)">
+      </div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
 
   <main id="main">
 
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+    <section id="about" class="alt-services">
+      <div class="head">
+        <div class="container head2 " data-aos="fade-up">
+          <div class="row justify-content-around gy-4">
+            <div class="col-lg-7 img-bg as" style="background-image: url(assets/img/hero-carousel/photo_2023-09-09_23-46-47\ \(1\)_auto_x2_colored_toned_light_ai_no_background.jpg);"
+              data-aos="zoom-in" data-aos-delay="100"></div>
 
-        <div class="row">
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch team">
-            <div class="member">
-              <div class="member-img member">
-                <img src="assets/img/clients/photo_2023-07-31_16-10-29.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://twitter.com/alsalama_tag"><i class="bi bi-twitter"></i></a>
-                  <a href="https://www.facebook.com/mohammed.nabil.3363"><i class="bi bi-facebook"></i></a>
-                  <a href="https://instagram.com/tag_al_salama_est?igshid=OGQ5ZDc2ODk2ZA=="><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>محمد نبيل</h4>
-                <span>ENG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <div class="col2 ">
-              <h2><span class="m-color">I</span>هلا</h2>
-              <p class="p-f">انا مدير تسويق متخصص في توريد وتركيب وصيانه اجهزه السلامه الإنذار والإطفاء وتجهيز المصانع
-                والشركات والفنادق والمراكز التجاريه والمستودعات بأدوات السلامه المختلفه وإستخراج تراخيص الدفاع المدني
+            <div class="col d-flex flex-column justify-content-center">
+              <h3>حول شركتنا</h3>
+              <p>تقدم تاج السلامة مجموعة واسعة من خيارات أنظمة مكافحة الحريق الرطبة والجافة أو أنظمة إطفاء الحريق –
+                أنظمة الرغوة – أنظمة الإطفاء بالغازات أنظمة الإنذار المبكر عن الحريق والكشف عن الحرائق بكافة انواعه نعمل
+                معكم لإيجاد النظام الذي يناسب إحتياجاتكم وذلك وفقاً للمعايير والمواصفات الدولية الخاصة بالسلامة. كما
+                نؤمن درجات السلامة القصوى لحياتكم من خلال خبرتنا وقدرتنا عل تصميم وتركيب جميع انظمة السلامة التي تلبي
+                متطلباتكم ونسعى لتقديم خدماتنا في جميع أنجاء المملكة.
               </p>
-              <div class="data">
-                <div>
-                  <p class="p-f data-col"> <span class="data-head">الاسم</span>: محمد نبيل </p>
-                  <p class="p-f data-col"> <span class="data-head">السن:</span> 33 سنه </p>
-                  <p class="p-f data-col"> <span class="data-head"> العمل الحر: </span>متاح </p>
-                </div>
-                <div>
-                  <p class="p-f data-col"> <span class="data-head">المسمي الوظيفي :</span> مدير تسويق </p>
-                  <p class="p-f data-col"> <span class="data-head">المكان:</span>المملكه العربيه السعوديه</p>
-                  <p class="p-f data-col"> <span class="data-head">البريد الاكتروني : </span><a href="#"
-                      class="text-decoration-none text-secondary text-lowercase">blly74918@gmail.com</a></p>
-                </div>
+
+              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-easel flex-shrink-0"></i>
+                <div class="p">
+                  <h2>التخطيط لمستقبل خالي من المخاطر  </h4>
               </div>
+              </div><!-- End Icon Box -->
+
+              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div class="p">
+                  <h2>نشر الوعي الثقافي في مجال الأمن والسلامة وتجنب حدوث المخاطر</h4>
+               
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div class="p">
+                  <h2> الإستمرارية والوصول لأعلى مستوى من الكفاءة والخبرة من خلال
+                    كادر مميز من المهندسين والفنيين</h4>
+          
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div class="p">
+                  <h2>لإرتقاء بالمهارات وتعلم كل ما هو جديد</h4>
+                </div>
+              </div><!-- End Icon Box -->
 
             </div>
 
           </div>
+        </div>
+      </div>
     </section><!-- End About Section -->
 
 
@@ -154,7 +195,7 @@
                 للكيمياء ، فإن النار هي تفاعل بين الحرارة والأكسجين والوقود. يتشكل مثلث النار معًا ، وهذه العناصر
                 الثلاثة ضرورية لبدء أي حريق وبقائه. إذا تمت إزالة أي شخص ، سيتم إطفاء الحريق.
 
-              <ul>
+              <ul class="u">
                 <li>
                   نظام الايروسول
                 </li>
@@ -175,7 +216,7 @@
                 <i class="bi bi-safe"></i>
               </div>
 
-              <h3 class="tx"> نظام السلامة العامة </h3>
+              <h3 class="tx t1"> نظام السلامة العامة </h3>
               <p>
 
                 يهدف إلى حماية العاملين بالمصانع ومنشآت العمل من الحوادث المحتملة.
@@ -193,7 +234,7 @@
               <div class="icon">
                 <i class="bi bi-fire"></i>
               </div>
-              <h3 class="tx"> نظام مكافحة الحريق</h3>
+              <h3 class="tx t3"> نظام مكافحة الحريق</h3>
               <p>يهدف إلى المحافظة على الأملاك العامة، الممتلكات الشخصية وحياة السكان من خطر الحريق باستخدام بعض الانظمه
                 مثلل ( نظام الرش الاي - نظام الخراطيم وصناديق الحريق - نظام مضخات الحريق - نظام عسكري الحريق - نظام
                 الصمامات والأنابيب الصاعده - نظام طفايات الحريق اليدوية | الاوتوماتيكية )
@@ -206,7 +247,7 @@
               <div class="icon">
                 <i class="bx bx-layer"></i>
               </div>
-              <h3 class="tx">التصميم </h3>
+              <h3 class="tx t4">التصميم </h3>
               <p>تصميم وتنفيذ كافة انظمة الامن و السلامة الهندسيه و تنفيذ انظمة انذار واطفاء الحريق بجميع انواعها وعمل
                 الحسابات الهيدروليكية لانظمة الاطفاء.</p>
             </div>
@@ -217,10 +258,10 @@
               <div class="icon">
                 <i class="bi bi-wrench"></i>
               </div>
-              <h3 class="tx"><a href="">الصيانه </a></h3>
+              <h3 class="tx t5"><p>الصيانه </p></h3>
               <p>نعمل علي صيانه جميع الانظمه مثل يجب صيانة و فحص طفايات الحريق بشكل منتظم للتأكد من أنها في حالة عمل
                 جيدة. تتضمن الخدمة المنتظمة</p>
-              <ul>
+              <ul class="u">
                 <li>
                   صيانه اجهزه الانذار
                 </li>
@@ -245,7 +286,7 @@
               <div class="icon">
                 <i class="bi bi-droplet-half"></i>
               </div>
-              <h3 class="tx"><a href="">نظام رش المياه و الرغاوي</a></h3>
+              <h3 class="tx t6"><a >نظام رش المياه و الرغاوي</a></h3>
               <p>تساعد أنظمة رشاشات الحريق
                 الآلية التي تم تركيبها وصيانتها
                 بشكل صحيح على إتقاذ الأرواح.
@@ -265,12 +306,12 @@
 
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio" >
+    <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title">
           <h2>الصور</h2>
-          
+
         </div>
 
         <div class="row">
@@ -294,7 +335,7 @@
               <p>هو الجهاز الذي يساعدنا على إخماد الحريق في المكان الذي لا يجب أن يحدث فيه الحريق</p>
               <a href="assets/img/portfolio/FM200.webp" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="نظام الاطفاء بالغاز"><i class="bx bx-plus"></i></a>
-              
+
             </div>
 
           </div>
@@ -303,11 +344,13 @@
             <img src="assets/img/portfolio/انذار حريق 1.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>نظام الإنذار الاتوماتيكي </h4>
-               <br>
-              <p>  تستخدم أنظمة الإنذار الاتوماتيكية في الأماكن والقاعات التي تتزايد احتمالات حدوث الحرائق بها وما قد تنجم عنه من خسائر كبيرة في فترة زمنية قصيرة ، وتعمل هذه الأنظمة بالتأثر بظواهر الحريق فمنها ما يتأثر باللهب أو الحرارة</p>
+              <br>
+              <p> تستخدم أنظمة الإنذار الاتوماتيكية في الأماكن والقاعات التي تتزايد احتمالات حدوث الحرائق بها وما قد
+                تنجم عنه من خسائر كبيرة في فترة زمنية قصيرة ، وتعمل هذه الأنظمة بالتأثر بظواهر الحريق فمنها ما يتأثر
+                باللهب أو الحرارة</p>
               <a href="assets/img/portfolio/انذار حريق 1.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="نظام الإنذار الاتوماتيكي"><i class="bx bx-plus"></i></a>
-             
+
             </div>
           </div>
 
@@ -316,10 +359,10 @@
             <div class="portfolio-info">
               <h4> FM200 أنظمة الإطفاء بالغاز</h4>
               <br>
-              <p> هو جهاز  يساعدنا على إخماد الحريق في المكان الذي لا يجب أن يحدث فيه الحريق</p>
+              <p> هو جهاز يساعدنا على إخماد الحريق في المكان الذي لا يجب أن يحدث فيه الحريق</p>
               <a href="assets/img/portfolio/nafs125.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="نظام الاطفاء بالغاز"><i class="bx bx-plus"></i></a>
-             
+
             </div>
           </div>
 
@@ -328,22 +371,25 @@
             <div class="portfolio-info">
               <h4>رغوة إطفاء الحرائق</h4>
               <br>
-              <p>هي رغوة تستخدم لاطفاء الحريق . دورها هو تبريد النار ونشر طبقة على الوقود، لمنع اتصاله مع الأكسجين ، مما يؤدي إلى قمع النار.</p>
+              <p>هي رغوة تستخدم لاطفاء الحريق . دورها هو تبريد النار ونشر طبقة على الوقود، لمنع اتصاله مع الأكسجين ، مما
+                يؤدي إلى قمع النار.</p>
               <a href="assets/img/portfolio/الرغوه 1.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="رغوة إطفاء الحرائق"><i class="bx bx-plus"></i></a>
-              
+
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <img src="assets/img/portfolio/انذار حريق 2.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-            <h4>نظام الإنذار الاتوماتيكي </h4>
-               <br>
-              <p>  تستخدم أنظمة الإنذار الاتوماتيكية في الأماكن والقاعات التي تتزايد احتمالات حدوث الحرائق بها وما قد تنجم عنه من خسائر كبيرة في فترة زمنية قصيرة ، وتعمل هذه الأنظمة بالتأثر بظواهر الحريق فمنها ما يتأثر باللهب أو الحرارة</p>
+              <h4>نظام الإنذار الاتوماتيكي </h4>
+              <br>
+              <p> تستخدم أنظمة الإنذار الاتوماتيكية في الأماكن والقاعات التي تتزايد احتمالات حدوث الحرائق بها وما قد
+                تنجم عنه من خسائر كبيرة في فترة زمنية قصيرة ، وتعمل هذه الأنظمة بالتأثر بظواهر الحريق فمنها ما يتأثر
+                باللهب أو الحرارة</p>
               <a href="assets/img/portfolio/انذار حريق 2.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="نظام الإنذار الاتوماتيكي "><i class="bx bx-plus"></i></a>
-              
+
             </div>
           </div>
 
@@ -354,12 +400,15 @@
             <div class="portfolio-info">
               <h4> أنظمة إطفاء الحرائق الرغوية</h4>
               <br>
-              <p>أنظمة إطفاء الحرائق رغوة CAFS نظام إطفاء الحرائق رغوة الهواء المضغوط. هناك قدرات مختلفة ، 10 جالون ، 30 جالون ، 60 جالون ، 100 جالون ، 200 جالون ، وهلم جرا. يمكن تطبيقها على أماكن مختلفة ، مثل المصنع والمستودع ومحطة البنزين ومحطة القطار والزراعة وما إلى ذلك. مواصفاتها:
+              <p>أنظمة إطفاء الحرائق رغوة CAFS نظام إطفاء الحرائق رغوة الهواء المضغوط. هناك قدرات مختلفة ، 10 جالون ، 30
+                جالون ، 60 جالون ، 100 جالون ، 200 جالون ، وهلم جرا. يمكن تطبيقها على أماكن مختلفة ، مثل المصنع
+                والمستودع ومحطة البنزين ومحطة القطار والزراعة وما إلى ذلك. مواصفاتها:
 
-</p>
+              </p>
               <a href="assets/img/portfolio/الرغوه 2.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="أنظمة إطفاء الحرائق الرغوية"><i class="bx bx-plus"></i></a>
-              
+                class="portfolio-lightbox preview-link" title="أنظمة إطفاء الحرائق الرغوية"><i
+                  class="bx bx-plus"></i></a>
+
             </div>
           </div>
 
@@ -368,12 +417,14 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <img src="assets/img/portfolio/نذار حريق  3.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-               <h4>نظام الإنذار الاتوماتيكي </h4>
-               <br>
-              <p>  تستخدم أنظمة الإنذار الاتوماتيكية في الأماكن والقاعات التي تتزايد احتمالات حدوث الحرائق بها وما قد تنجم عنه من خسائر كبيرة في فترة زمنية قصيرة ، وتعمل هذه الأنظمة بالتأثر بظواهر الحريق فمنها ما يتأثر باللهب أو الحرارة</p>
+              <h4>نظام الإنذار الاتوماتيكي </h4>
+              <br>
+              <p> تستخدم أنظمة الإنذار الاتوماتيكية في الأماكن والقاعات التي تتزايد احتمالات حدوث الحرائق بها وما قد
+                تنجم عنه من خسائر كبيرة في فترة زمنية قصيرة ، وتعمل هذه الأنظمة بالتأثر بظواهر الحريق فمنها ما يتأثر
+                باللهب أو الحرارة</p>
               <a href="assets/img/portfolio/نذار حريق  3.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="نظام الإنذار الاتوماتيكي"><i class="bx bx-plus"></i></a>
-             
+
             </div>
           </div>
 
@@ -389,12 +440,12 @@
       <div class="container">
         <div class="section-title">
           <h2>التواصل</h2>
-         
+
         </div>
 
-        <div class="row container con">
+        <div class=" container ">
 
-          <div class="col-lg-6">
+          <div class="">
 
             <div class="row container">
               <div class="col-md-12">
