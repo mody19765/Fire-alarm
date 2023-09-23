@@ -5190,3 +5190,10 @@ section#portfolio {
     border-left: 0;
   }
 }
+@media (max-width: 500px) {
+.alt-services .img-bg {
+  background-size: cover;
+  background-position: center center;
+  min-height: 414px;
+}
+}
