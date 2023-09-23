@@ -5200,19 +5200,17 @@ section#portfolio {
 }
 }
 
-@media (max-width: 340px) {
-.alt-services .img-bg {
-  background-size: cover;
-  background-position: center center;
-    min-height: 288px;
-  
+
+@media (max-width: 288px) {
+  .alt-services .img-bg {
+       min-height: 244px;
+  }
 }
-.row>* {
-  flex-shrink: 0;
-  width: 85%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
-  margin-top: var(--bs-gutter-y);
+
+@media (max-width: 388px) and (min-width: 330px) {
+  .alt-services .img-bg {
+    min-height: 364px;
+  }
 }
-}
+
+
