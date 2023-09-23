@@ -5190,10 +5190,29 @@ section#portfolio {
     border-left: 0;
   }
 }
-@media (max-width: 500px) {
+
+@media (max-width: 500px) and (min-width: 390px)
+{
 .alt-services .img-bg {
   background-size: cover;
   background-position: center center;
   min-height: 414px;
+}
+}
+
+@media (max-width: 340px) {
+.alt-services .img-bg {
+  background-size: cover;
+  background-position: center center;
+  min-height: 300px;
+  
+}
+.row>* {
+  flex-shrink: 0;
+  width: 85%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
 }
 }
