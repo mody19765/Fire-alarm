@@ -494,3 +494,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }); // end DOM ready
 })(jQuery); // end jQuery
+
